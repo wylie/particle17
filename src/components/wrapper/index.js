@@ -6,6 +6,7 @@ import "./_index.css";
 const Wrapper = () => {
   return (
     <div class="wrap">
+      WRAPPER
         <div class="wrap-side wrap-side--left">
           <ul class="side">
             <li class="side-item">
