@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import "./_index.css";
 
-const Wrapper = ({ }) => {
+const Wrapper = () => {
   return (
     <div class="wrap">
         <div class="wrap-side wrap-side--left">
