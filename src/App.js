@@ -6,7 +6,7 @@ import ThumbList from "./components/thumbList";
 import Content from "./components/content";
 import Footer from "./components/footer";
 
-import './App.css';
+import './app.css';
 
 class App extends Component {
   render() {
