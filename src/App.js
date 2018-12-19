@@ -20,7 +20,7 @@ class App extends Component {
             <ThumbList className="App_thumb" children="Thumb List" />
             <Content className="App_image" children="Content" />
           </div>
-          <Footer children="Footer" />
+          <Footer children="All work © 2018 Mark S Fisher" />
         </div>
         <div />
       </div>

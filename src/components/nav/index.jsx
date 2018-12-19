@@ -9,7 +9,7 @@ const Nav = () => {
   return (
     <ul className="Nav">
       {nav.items.map((item, index) => (
-        <li key={index}>{item}</li>
+        <li key={index}><a href="#">{item}</a></li>
       ))}
     </ul>
   );
