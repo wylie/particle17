@@ -1,0 +1,21 @@
+.App {
+  display: grid;
+  grid-template-columns: auto minmax(320px, 700px) auto;
+  background: #ccc;
+  height: 100vh;
+}
+
+.App_item {
+  display: grid;
+  grid-template-rows: auto auto minmax(300px, 100%) auto;
+  background: #fff;
+}
+.App_content {
+  display: flex;
+}
+.App_thumb {
+  flex: 2 2 0px;
+}
+.App_image {
+  flex: 10 10 0px;
+}
