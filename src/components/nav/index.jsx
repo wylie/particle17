@@ -1,15 +1,20 @@
 import React from "react";
+import {
+  Link
+} from "react-router-dom";
 import PropTypes from "prop-types";
 
 import { nav } from "../../assets/data/nav.js";
 
-import "./_index.css";
+import "./_index.scss";
 
 const Nav = () => {
   return (
     <ul className="Nav">
-      {nav.items.map((item, index) => (
-        <li key={index}><a href="#">{item}</a></li>
+      {nav.map(item => (
+        <Link to={item.url} key={item.text}>
+          <li className="NavItem" key={item.text}>{item.text}</li>
+        </Link>
       ))}
     </ul>
   );

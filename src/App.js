@@ -1,29 +1,44 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import Heading from "./components/heading";
 import Nav from "./components/nav";
-import ThumbList from "./components/thumbList";
-import Content from "./components/content";
-import Footer from "./components/footer";
+import Footer from "./components/footer"; 
 
-import './app.css';
+import { nav } from "./assets/data/nav.js";
+
+import './app.scss';
 
 class App extends Component {
+
   render() {
+    const name = "Mark S. Fisher";
+    const routesComponents = nav.map(item =>
+        <Route strict path={item.url} key={item.text} component={item.component} />
+    );
+    console.log(routesComponents)
     return (
+      <Router>
       <div className="App">
-        <div />
+        <Helmet className="App_title" title={name} />
         <div className="App_item">
-          <Heading children="Heading" />
+          <Link to="/">
+            <Heading children={name} />
+          </Link>
           <Nav children="Nav" />
           <div className="App_content">
-            <ThumbList className="App_thumb" children="Thumb List" />
-            <Content className="App_image" children="Content" />
+              {routesComponents}
           </div>
-          <Footer children="All work © 2018 Mark S Fisher" />
+          <Footer children={`© 2019 ${name}`} />
         </div>
         <div />
       </div>
+      </Router>
     );
   }
 }

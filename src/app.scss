@@ -1,0 +1,30 @@
+body {
+  background: #707070;
+  min-width: 350px;
+}
+
+.App {
+  /* display: grid; */
+  /* grid-template-columns: auto minmax(320px, 700px) auto; */
+  max-width: 800px;
+  height: 100vh;
+  margin: auto;
+  &_item {
+    /* display: grid; */
+    /* grid-template-rows: auto auto minmax(auto, 100%) auto; */
+    margin: 0 1rem;
+    background: #fff;
+  }
+  &_content {
+    display: flex;
+  }
+  &_thumb {
+    flex: 2 2 0px;
+  }
+  &_image {
+    flex: 12 12 0px;
+  }
+  &_title {
+    text-transform: uppercase;
+  }
+}

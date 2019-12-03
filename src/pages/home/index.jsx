@@ -1,23 +1,25 @@
 import React from 'react';
 import PropTypes from "prop-types";
+import { Helmet } from "react-helmet";
 import cn from "classnames";
 
 import './_index.scss';
 
-const Content = ({ className, children }) => {
-  const outputClassName = cn(className, Content);
+const Home = ({ className, children }) => {
+  const outputClassName = cn(className, Home);
   return (
     <div className={outputClassName}>
-      {children}
+      <Helmet title="MARK S. FISHER" />
+      Home
     </div>
   );
 }
 
-Content.propTypes = {
+Home.propTypes = {
   children: PropTypes.string,
   className: PropTypes.string
 };
 
-Content.defaultProps = {};
+Home.defaultProps = {};
 
-export default Content;
+export default Home;
