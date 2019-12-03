@@ -5,9 +5,9 @@ import './_index.scss';
 
 const Heading = ({ children }) => {
   return (
-    <div className="Heading">
+    <h1 className="Heading">
       {children}
-    </div>
+    </h1>
   );
 }
 

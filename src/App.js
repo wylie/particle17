@@ -19,25 +19,22 @@ class App extends Component {
   render() {
     const name = "Mark S. Fisher";
     const routesComponents = nav.map(item =>
-        <Route strict path={item.url} key={item.text} component={item.component} />
+        <Route exact path={item.url} key={item.text} component={item.component} />
+        // <Route exact path={item.url} key={item.text} render={(props) => <item.component {...props} className="derp" />} />
     );
-    console.log(routesComponents)
     return (
       <Router>
-      <div className="App">
-        <Helmet className="App_title" title={name} />
-        <div className="App_item">
-          <Link to="/">
-            <Heading children={name} />
-          </Link>
-          <Nav children="Nav" />
-          <div className="App_content">
+        <div className="App">
+          <Helmet className="App_title" title={name} />
+          <div className="App_item">
+            <Heading><Link to="/" className="NoUnderline">{name}</Link></Heading>
+            <Nav children="Nav" />
+            <div className="App_content">
               {routesComponents}
+            </div>
+            <Footer children={`© 2019 ${name}`} />
           </div>
-          <Footer children={`© 2019 ${name}`} />
         </div>
-        <div />
-      </div>
       </Router>
     );
   }
