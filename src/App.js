@@ -1,5 +1,3 @@
-import React from "react";
-
 import { StyledDiv } from "./styled.js";
 
 const App = ({ children, wrap }) => (
