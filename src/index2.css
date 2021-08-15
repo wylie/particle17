@@ -17,7 +17,7 @@ html, body {
   margin-top: 50px;
 }
 
-#back a {
+a {
   height: 421px;
   display: block;
   float: left;
@@ -27,34 +27,32 @@ html, body {
   cursor: pointer;
 }
 
-#links {
-  position: absolute;
-  top: 154px;
-  height: 421px;
-}
-
-a span {
-  width: 101px;
-  height: 101px;
-  display: block;
-  position: absolute;
-  top: 50px;
-}
-
 #illustration {
-  width: 354px;
+  width: 353px;
 }
 
 #illustration span {
-  background: url(img/left.gif) no-repeat;
-  left: 303px;
+  width: 42px;
+  height: 39px;
+  background: url(img/leftBoxOn.gif) no-repeat;
+  position: absolute;
+  top: 161px;
+  left: 159px;
+  display: none;
 }
 
 #comix {
-  width: 346px;
+  width: 347px;
 }
 
 #comix span {
-  background: url(img/right.gif) no-repeat;
-  right: 296px;
+  width: 134px;
+  height: 125px;
+  background: url(img/rightBox2.png) no-repeat;
+  background-position-x: 33px;
+  background-position-y: -25px;
+  position: absolute;
+  top: 133px;
+  right: 127px;
+  overflow: hidden;
 }
