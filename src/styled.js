@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 import "./reset.css";
 
+import back from "./img/back.gif";
+import left from "./img/left.gif";
+import right from "./img/right.gif";
+
 export const StyledDiv = styled.div`
   width: 700px;
   margin: 0 auto 0;
@@ -9,7 +13,7 @@ export const StyledDiv = styled.div`
   .back {
     width: 700px;
     height: 525px;
-    background: url(./img/back.gif) no-repeat;
+    background: url(${back}) no-repeat;
     margin-top: 50px;
   }
 
@@ -43,7 +47,7 @@ export const StyledDiv = styled.div`
   }
 
   .illustration .imagewrap {
-    background: url(./img/left.gif) no-repeat;
+    background: url(${left}) no-repeat;
     left: 303px;
   }
 
@@ -52,7 +56,7 @@ export const StyledDiv = styled.div`
   }
 
   .comix .imagewrap {
-    background: url(./img/right.gif) no-repeat;
+    background: url(${right}) no-repeat;
     right: 296px;
   }
 `;
