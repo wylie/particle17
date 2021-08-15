@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import "./reset.css";
 
-const StyledDiv = styled.div`
+export const StyledDiv = styled.div`
   width: 700px;
   margin: 0 auto 0;
 
