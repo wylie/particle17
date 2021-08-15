@@ -6,12 +6,6 @@ const StyledDiv = styled.div`
   width: 700px;
   margin: 0 auto 0;
 
-  // html, body {
-  //   width: 100%;
-  //   background: #fff;
-  //   font-family: helvetica, arial, sans-serif;
-  // }
-
   .back {
     width: 700px;
     height: 525px;
