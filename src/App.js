@@ -5,10 +5,10 @@ import "./index2.css";
 class App extends React.Component {
   render() {
     return (
-      <div id="wrap">
-        <div id="back">
-          <a id="illustration"><span></span></a>
-          <a id="comix"><span></span></a>
+      <div class="wrap">
+        <div class="back">
+          <a class="anchor illustration"><span class="imagewrap"></span></a>
+          <a class="anchor comix"><span class="imagewrap"></span></a>
         </div>
       </div>
     )

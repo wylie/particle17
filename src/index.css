@@ -5,19 +5,19 @@ html, body {
   font-family: helvetica, arial, sans-serif;
 }
 
-#wrap {
+.wrap {
   width: 700px;
   margin: 0 auto 0;
 }
 
-#back {
+.back {
   width: 700px;
   height: 525px;
   background: url(img/back.gif) no-repeat;
   margin-top: 50px;
 }
 
-#back a {
+.back .anchor {
   height: 421px;
   display: block;
   float: left;
@@ -27,13 +27,13 @@ html, body {
   cursor: pointer;
 }
 
-#links {
+/* .links {
   position: absolute;
   top: 154px;
   height: 421px;
-}
+} */
 
-a span {
+.anchor  .imagewrap {
   width: 101px;
   height: 101px;
   display: block;
@@ -41,20 +41,20 @@ a span {
   top: 50px;
 }
 
-#illustration {
+.illustration {
   width: 354px;
 }
 
-#illustration span {
+.illustration .imagewrap {
   background: url(img/left.gif) no-repeat;
   left: 303px;
 }
 
-#comix {
+.comix {
   width: 346px;
 }
 
-#comix span {
+.comix .imagewrap {
   background: url(img/right.gif) no-repeat;
   right: 296px;
 }
