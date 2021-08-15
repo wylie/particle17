@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 import "./reset.css";
 
-import back from "./asstes/back.gif";
-import left from "./asstes/left.gif";
-import right from "./asstes/right.gif";
+import back from "./assets/back.gif";
+import left from "./assets/left.gif";
+import right from "./assets/right.gif";
 
 export const StyledDiv = styled.div`
   width: 700px;
