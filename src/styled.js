@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 import "./reset.css";
 
-import back from "./img/back.gif";
-import left from "./img/left.gif";
-import right from "./img/right.gif";
+import back from "./asstes/back.gif";
+import left from "./asstes/left.gif";
+import right from "./asstes/right.gif";
 
 export const StyledDiv = styled.div`
   width: 700px;
@@ -26,12 +26,6 @@ export const StyledDiv = styled.div`
     overflow: hidden;
     cursor: pointer;
   }
-
-  /* .links {
-    position: absolute;
-    top: 154px;
-    height: 421px;
-  } */
 
   .anchor  .imagewrap {
     display: none;
