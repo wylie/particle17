@@ -9,7 +9,7 @@ export const StyledDiv = styled.div`
   .back {
     width: 700px;
     height: 525px;
-    background: url(img/back.gif) no-repeat;
+    background: url(./img/back.gif) no-repeat;
     margin-top: 50px;
   }
 
@@ -43,7 +43,7 @@ export const StyledDiv = styled.div`
   }
 
   .illustration .imagewrap {
-    background: url(img/left.gif) no-repeat;
+    background: url(./img/left.gif) no-repeat;
     left: 303px;
   }
 
@@ -52,7 +52,7 @@ export const StyledDiv = styled.div`
   }
 
   .comix .imagewrap {
-    background: url(img/right.gif) no-repeat;
+    background: url(./img/right.gif) no-repeat;
     right: 296px;
   }
 `;
