@@ -7,8 +7,8 @@ class App extends React.Component {
     return (
       <div class="wrap">
         <div class="back">
-          <a class="anchor illustration"><span class="imagewrap"></span></a>
-          <a class="anchor comix"><span class="imagewrap"></span></a>
+          <a href="http://www.fisherillustration.com" class="anchor illustration"><span class="imagewrap"></span></a>
+          <a href="http://www.particle17.com" class="anchor comix"><span class="imagewrap"></span></a>
         </div>
       </div>
     )
