@@ -15,7 +15,7 @@
     "react-scripts": "4.0.2",
     "styled-components": "^5.2.1",
     "web-vitals": "^1.0.1",
-    "styled-components": 
+    "styled-components": "5.3.0"
   },
   "scripts": {
     "predeploy": "yarn run build",
