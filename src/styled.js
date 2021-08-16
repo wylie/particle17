@@ -46,14 +46,14 @@ export const ImageWrap = styled.div`
     position: absolute;
     top: 50px;
   }
-  &.poop {
+  ${Anchor}:hover &.poop {
     background: url(${leftBoxOn}) no-repeat;
     top: 271px;
     left: 149px;
     width: 42px;
     height: 39px;
   }
-  &.turd {
+  ${Anchor}:hover &.turd {
     background: url(${rightBoxOn}) no-repeat;
     top: 238px;
     right: 126px;
