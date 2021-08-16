@@ -38,7 +38,7 @@ export const Anchor = styled.a`
   }
 `;
 
-export const ImageWrap = styled.span`
+export const ImageWrap = styled.div`
   ${Anchor} & {
     display: none;
     width: 101px;
@@ -48,11 +48,11 @@ export const ImageWrap = styled.span`
     top: 50px;
   }
   .poop {
-    background-image: url(${leftBoxOff}) no-repeat;
+    background: url(${leftBoxOff}) no-repeat;
     left: 303px;
   }
   .turd {
-    background-image: url(${rightBoxOff}) no-repeat;
+    background: url(${rightBoxOff}) no-repeat;
     right: 296px;
   }
 `;
