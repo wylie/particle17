@@ -1,7 +1,7 @@
 import { Wrap, Back, Anchor, ImageWrap } from "./styled.js";
 
 const App = ({ children, wrap }) => (
-  <StyledDiv wrap="true">
+  <Wrap wrap="true">
     <Back>
       <Anchor href="http://www.fisherillustration.com" class="illustration">
         <ImageWrap />
@@ -10,7 +10,7 @@ const App = ({ children, wrap }) => (
         <ImageWrap />
       </Anchor>
     </Back>
-  </StyledDiv>
+  </Wrap>
 );
 
 export default App;
