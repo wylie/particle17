@@ -47,11 +47,11 @@ export const ImageWrap = styled.div`
     position: absolute;
     top: 50px;
   }
-  .poop {
+  &.poop {
     background: url(${leftBoxOff}) no-repeat;
     left: 303px;
   }
-  .turd {
+  &.turd {
     background: url(${rightBoxOff}) no-repeat;
     right: 296px;
   }
