@@ -3,6 +3,8 @@ import { Wrap, Back, Anchor, ImageWrap } from "./styled.js";
 const App = ({ children, wrap }) => (
   <Wrap>
     <Back>
+      <ImageWrap data-element="poop" class="poop" />
+      <ImageWrap data-element="turd" class="turd" />
       <Anchor href="http://www.fisherillustration.com" class="illustration">
         <ImageWrap data-element="poop" class="poop" />
       </Anchor>
