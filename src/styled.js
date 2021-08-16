@@ -18,9 +18,9 @@ export const Wrap = styled.div`
   
 export const Back = styled.div`
   display: flex;
-  // width: 700px;
-  // height: 525px;
-  // background: url(${back}) no-repeat;
+  width: 700px;
+  height: 525px;
+  background: url(${back}) no-repeat;
 `;
 
 export const Anchor = styled.a`
@@ -47,12 +47,12 @@ export const ImageWrap = styled.span`
     position: absolute;
     top: 50px;
   }
-  &.illustration {
-    background: url(${leftBoxOff}) no-repeat;
+  .illustration {
+    background-image: url(${leftBoxOff}) no-repeat;
     left: 303px;
   }
-  &.comix {
-    background: url(${rightBoxOff}) no-repeat;
+  .comix {
+    background-image: url(${rightBoxOff}) no-repeat;
     right: 296px;
   }
 `;
