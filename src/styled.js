@@ -11,16 +11,16 @@ import rightBoxOff from "./assets/rightBoxOff.png";
 import rightBoxOn from "./assets/rightBoxOn.png";
 
 export const Wrap = styled.div`
-  width: 700px;
-  margin: 0 auto 0;
-  `;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+`;
   
 export const Back = styled.div`
   display: flex;
-  width: 700px;
-  height: 525px;
-  margin-top: 50px;
-  background: url(${back}) no-repeat;
+  // width: 700px;
+  // height: 525px;
+  // background: url(${back}) no-repeat;
 `;
 
 export const Anchor = styled.a`
