@@ -47,11 +47,11 @@ export const ImageWrap = styled.span`
     position: absolute;
     top: 50px;
   }
-  .illustration {
+  .poop {
     background-image: url(${leftBoxOff}) no-repeat;
     left: 303px;
   }
-  .comix {
+  .turd {
     background-image: url(${rightBoxOff}) no-repeat;
     right: 296px;
   }

@@ -4,10 +4,10 @@ const App = ({ children, wrap }) => (
   <Wrap>
     <Back>
       <Anchor href="http://www.fisherillustration.com" class="illustration">
-        <ImageWrap class="illustration" />
+        <ImageWrap class="poop" />
       </Anchor>
       <Anchor href="http://www.particle17.com" class="comix">
-        <ImageWrap class="comix" />
+        <ImageWrap class="turd" />
       </Anchor>
     </Back>
   </Wrap>
