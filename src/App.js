@@ -1,11 +1,15 @@
-import { StyledDiv } from "./styled.js";
+import { Wrap, Back, Anchor, ImageWrap } from "./styled.js";
 
 const App = ({ children, wrap }) => (
   <StyledDiv wrap="true">
-    <div class="back">
-      <a href="http://www.fisherillustration.com" class="anchor illustration"><span class="imagewrap"></span></a>
-      <a href="http://www.particle17.com" class="anchor comix"><span class="imagewrap"></span></a>
-    </div>
+    <Back>
+      <Anchor href="http://www.fisherillustration.com" class="illustration">
+        <ImageWrap />
+      </Anchor>
+      <Anchor href="http://www.particle17.com" class="comix">
+        <ImageWrap />
+      </Anchor>
+    </Back>
   </StyledDiv>
 );
 
