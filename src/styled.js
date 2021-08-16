@@ -47,7 +47,7 @@ export const ImageWrap = styled.div`
     top: 50px;
   }
   &.poop {
-    background: url(${leftBoxOff}) no-repeat;
+    background: url(${leftBoxOn}) no-repeat;
     top: 265px;
     left: 159px;
     width: 40px;
