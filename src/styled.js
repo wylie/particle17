@@ -41,18 +41,22 @@ export const Anchor = styled.a`
 export const ImageWrap = styled.div`
   ${Anchor} & {
     display: none;
-    width: 101px;
-    height: 101px;
     display: block;
     position: absolute;
     top: 50px;
   }
   &.poop {
     background: url(${leftBoxOff}) no-repeat;
-    left: 303px;
+    top: 265px;
+    left: 159px;
+    width: 40px;
+    height: 40px;
   }
   &.turd {
-    background: url(${rightBoxOff}) no-repeat;
-    right: 296px;
+    background: url(${rightBoxOn}) no-repeat;
+    top: 238px;
+    right: 126px;
+    width: 135px;
+    height: 125px;
   }
 `;
