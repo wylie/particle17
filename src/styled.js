@@ -39,14 +39,6 @@ export const Anchor = styled.a`
 `;
 
 export const ImageWrap = styled.span`
-  ${Anchor}.illustration & {
-    background: url(${leftBoxOff}) no-repeat;
-    left: 303px;
-  }
-  ${Anchor}.comix & {
-    background: url(${rightBoxOff}) no-repeat;
-    right: 296px;
-  }
   ${Anchor} & {
     display: none;
     width: 101px;
@@ -54,5 +46,13 @@ export const ImageWrap = styled.span`
     display: block;
     position: absolute;
     top: 50px;
+  }
+  ${Anchor} &.illustration {
+    background: url(${leftBoxOff}) no-repeat;
+    left: 303px;
+  }
+  ${Anchor} &.comix {
+    background: url(${rightBoxOff}) no-repeat;
+    right: 296px;
   }
 `;
