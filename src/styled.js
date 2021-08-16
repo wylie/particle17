@@ -24,6 +24,7 @@ export const Back = styled.div`
 `;
 
 export const Anchor = styled.a`
+  position: relative;
   &.illustration {
     width: 354px;
   }
