@@ -48,10 +48,10 @@ export const ImageWrap = styled.div`
   }
   &.poop {
     background: url(${leftBoxOn}) no-repeat;
-    top: 265px;
-    left: 159px;
-    width: 40px;
-    height: 40px;
+    top: 271px;
+    left: 149px;
+    width: 42px;
+    height: 39px;
   }
   &.turd {
     background: url(${rightBoxOn}) no-repeat;
