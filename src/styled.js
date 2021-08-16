@@ -3,8 +3,12 @@ import styled from "styled-components";
 import "./reset.css";
 
 import back from "./assets/back.gif";
-import left from "./assets/leftOn.gif";
-import right from "./assets/rightOnn.gif";
+import left from "./assets/left.gif";
+import leftBoxOff from "./assets/leftBoxOff.gif";
+import leftBoxOn from "./assets/leftBoxOn.gif";
+import right from "./assets/right.gif";
+import rightBoxOff from "./assets/rightBoxOff.gif";
+import rightBoxOn from "./assets/rightBoxOn.gif";
 
 export const Wrap = styled.div`
   width: 700px;
@@ -36,11 +40,11 @@ export const Anchor = styled.a`
 
 export const ImageWrap = styled.span`
   ${Anchor}.illustration & {
-    background: url(${left}) no-repeat;
+    background: url(${leftBoxOff}) no-repeat;
     left: 303px;
   }
   ${Anchor}.comix & {
-    background: url(${right}) no-repeat;
+    background: url(${rightBoxOff}) no-repeat;
     right: 296px;
   }
   ${Anchor} & {
