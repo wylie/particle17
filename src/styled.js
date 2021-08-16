@@ -3,8 +3,8 @@ import styled from "styled-components";
 import "./reset.css";
 
 import back from "./assets/back.gif";
-import left from "./assets/left.gif";
-import right from "./assets/right.gif";
+import left from "./assets/leftOn.gif";
+import right from "./assets/rightOnn.gif";
 
 export const Wrap = styled.div`
   width: 700px;
@@ -12,10 +12,11 @@ export const Wrap = styled.div`
   `;
   
 export const Back = styled.div`
+  display: flex;
   width: 700px;
   height: 525px;
-  background: url(${back}) no-repeat;
   margin-top: 50px;
+  background: url(${back}) no-repeat;
 `;
 
 export const Anchor = styled.a`
@@ -26,12 +27,9 @@ export const Anchor = styled.a`
     width: 346px;
   }
   ${Back} & {
-    height: 421px;
     display: block;
-    float: left;
-    margin-top: 104px;
-    position: relative;
-    overflow: hidden;
+    height: 100%;
+    width: 50%;
     cursor: pointer;
   }
 `;
