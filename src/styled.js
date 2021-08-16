@@ -47,11 +47,11 @@ export const ImageWrap = styled.span`
     position: absolute;
     top: 50px;
   }
-  ${Anchor} {
+  ${Anchor} & {
     background: url(${leftBoxOff}) no-repeat;
     left: 303px;
   }
-  ${Anchor} {
+  ${Anchor} & {
     background: url(${rightBoxOff}) no-repeat;
     right: 296px;
   }
