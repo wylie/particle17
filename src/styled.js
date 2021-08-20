@@ -1,63 +1,102 @@
 import styled from "styled-components";
 
-import "./reset.css";
-
-import back from "./assets/back.gif";
-import left from "./assets/left.gif";
-import leftBoxOff from "./assets/leftBoxOff.gif";
-import leftBoxOn from "./assets/leftBoxOn.gif";
-import right from "./assets/right.gif";
-import rightBoxOff from "./assets/rightBoxOff.png";
-import rightBoxOn from "./assets/rightBoxOn.png";
+import img1 from "./assets/nav/navTitle.png";
+import img2 from "./assets/nav/navIllustrationArt.png";
+import img3 from "./assets/nav/navContact.png";
+import img4 from "./assets/nav/navDrawger.png";
 
 export const Wrap = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+	width: 1076px;
+	height: 648px;
+	border-bottom: 1px solid #fff;
+	padding-top: 10px;
+	margin-left: 10px;
+
 `;
-  
-export const Back = styled.div`
+
+export const Sidebar = styled.div`
+  width: 130px;
+  height: 648px;
+  overflow: auto;
+  float: left;
+`;
+
+export const Thumbs = styled.div``;
+
+export const Content = styled.div`
+  width: 936px;
+  height: 648px;
+  margin-left: 10px;
+  float: left;
+`;
+
+export const Header = styled.div`
   display: flex;
-  width: 700px;
-  height: 525px;
-  background: url(${back}) no-repeat;
+  height: 27px;
+  padding: 0 20px;
+  background: #330067;
 `;
 
 export const Anchor = styled.a`
+  font-size: 0;
+  &.contact {
+    width: 64px;
+    margin-left: 30px;
+    background: url(${img3}) no-repeat;
+  }
+  &.drawger {
+    width: 108px;
+    margin-left: 20px;
+    background: url(${img4}) no-repeat;
+  }
+`;
+
+export const Nav = styled.div`
   position: relative;
-  &.illustration {
-    width: 354px;
+`;
+
+export const Title = styled.div`
+  ${Header} & {
+    flex: 1;
+    width: 251px;
+    background: url(${img1}) no-repeat;
   }
-  &.comix {
-    width: 346px;
+`;
+
+export const Copy = styled.div`
+  ${Header} & {
+    width: 163px;
+    background: url(${img2}) no-repeat;
   }
-  ${Back} & {
-    display: block;
-    height: 100%;
-    width: 50%;
+`;
+
+export const Image = styled.img`
+  ${Thumbs} & {
+		margin-bottom: 10px;
     cursor: pointer;
   }
 `;
 
-export const ImageWrap = styled.div`
-  ${Anchor} & {
-    display: none;
-    display: block;
+export const Popup = styled.span`
+  display: none;
+  ${Anchor}:hover & {
     position: absolute;
-    top: 50px;
-  }
-  ${Anchor}.illustration:hover & {
-    background: url(${leftBoxOn}) no-repeat;
-    top: 271px;
-    left: 149px;
-    width: 42px;
-    height: 39px;
-  }
-  ${Anchor}.comix:hover & {
-    background: url(${rightBoxOn}) no-repeat;
-    top: 238px;
-    right: 126px;
-    width: 135px;
-    height: 125px;
+    z-index: 99;
+    right: 0;
+    display: block;
+    width: 180px;
+    height: auto;
+    padding: 5px;
+    margin: 30px 0 0 -125px;
+    background: #000;
+    background: #000000bf;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: -5px 5px 10px rgba(0,0,0,.5);
+    -webkit-box-shadow: -5px 5px 10px rgb(0 0 0 / 50%);
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #fff;
   }
 `;
