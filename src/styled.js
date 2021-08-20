@@ -6,19 +6,16 @@ import img3 from "./assets/nav/navContact.png";
 import img4 from "./assets/nav/navDrawger.png";
 
 export const Wrap = styled.div`
+  display: flex;
 	width: 1076px;
 	height: 648px;
-	border-bottom: 1px solid #fff;
-	padding-top: 10px;
-	margin-left: 10px;
-
+	margin-top: 1rem;
 `;
 
 export const Sidebar = styled.div`
   width: 130px;
   height: 648px;
   overflow: auto;
-  float: left;
 `;
 
 export const Thumbs = styled.div``;
@@ -27,7 +24,6 @@ export const Content = styled.div`
   width: 936px;
   height: 648px;
   margin-left: 10px;
-  float: left;
 `;
 
 export const Header = styled.div`
