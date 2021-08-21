@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/particle17/static/js/main.8ba6d7be.chunk.js",
+    "main.js.map": "/particle17/static/js/main.8ba6d7be.chunk.js.map",
+    "runtime-main.js": "/particle17/static/js/runtime-main.78f8bb2d.js",
+    "runtime-main.js.map": "/particle17/static/js/runtime-main.78f8bb2d.js.map",
+    "static/js/2.4d092fce.chunk.js": "/particle17/static/js/2.4d092fce.chunk.js",
+    "static/js/2.4d092fce.chunk.js.map": "/particle17/static/js/2.4d092fce.chunk.js.map",
+    "static/js/3.bb6be448.chunk.js": "/particle17/static/js/3.bb6be448.chunk.js",
+    "static/js/3.bb6be448.chunk.js.map": "/particle17/static/js/3.bb6be448.chunk.js.map",
+    "index.html": "/particle17/index.html",
+    "static/js/2.4d092fce.chunk.js.LICENSE.txt": "/particle17/static/js/2.4d092fce.chunk.js.LICENSE.txt",
+    "static/media/P17_robothead.b014a56b.jpg": "/particle17/static/media/P17_robothead.b014a56b.jpg",
+    "static/media/frame.da4a065b.png": "/particle17/static/media/frame.da4a065b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.78f8bb2d.js",
+    "static/js/2.4d092fce.chunk.js",
+    "static/js/main.8ba6d7be.chunk.js"
+  ]
+}
