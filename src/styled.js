@@ -1,98 +1,179 @@
-import styled from "styled-components";
+import styled,
+{ createGlobalStyle } from "styled-components";
 
-import img1 from "./assets/nav/navTitle.png";
-import img2 from "./assets/nav/navIllustrationArt.png";
-import img3 from "./assets/nav/navContact.png";
-import img4 from "./assets/nav/navDrawger.png";
+import navImg from "./assets/nav.png";
+import frameImage from "./assets/frame.png";
+
+export const GlobalStyle = createGlobalStyle`
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,del,
+  dfn,
+  em,
+  font,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,b,
+  u,
+  i,
+  center,dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+  }
+  body {
+    line-height: 1;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  blockquote,
+  q {
+    quotes: none;
+  }
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: '';content: none;
+  }
+  :focus {
+    outline: 0;
+  }
+  ins {
+    text-decoration: none;
+  }
+  del {
+    text-decoration: line-through;
+  }
+  table {
+    border-collapse: collapse;border-spacing: 0;
+  }
+  html,
+  body {
+    background: #fff;
+  }
+  input, textarea {
+    border: 2px solid #666 !important;
+  }
+  #root {
+    display: flex;
+    justify-content: center;
+  }
+`
+export const Display = styled.div`
+  position: absolute;
+  top: 94px;
+  left: 164px;
+  width: 470px;
+  height: 432px;
+`;
+
+export const ContactForm = styled.div`
+  position: absolute;
+  display: none;
+  width: 470px;
+  height: 432px;
+`;
+
+export const Iframe = styled.iframe`
+  width: 100%;
+  height: 100%;
+`;
+
+export const Nav = styled.ul`
+  position: absolute;
+  top: 94px;
+  left: 68px;
+  width: 95px;
+  height: 294px;
+`;
+
+export const NavItem = styled.li`
+  height: 49px;
+  cursor: pointer;
+  text-indent: -999px;
+  font-size: 0;
+  &:hover {
+    background-repeat: no-repeat;
+    background-image: url(${navImg});
+  }
+  &[data-section="back"]:hover {
+    background-position: 0 0;
+  }
+  &[data-section="back"]:hover {
+    background-position: 0 -49px;
+  }		
+  &[data-section="chars"]:hover {
+    background-position: 0 -98px;
+  }		
+  &[data-section="comix"]:hover {
+    background-position: 0 -147px;
+  }		
+  &[data-section="cons"]:hover {
+    background-position: 0 -196px;
+  }		
+  &[data-section="contact"]:hover {
+    background-position: 0 -245px;
+  }
+`;
 
 export const Wrap = styled.div`
-  display: flex;
-	width: 1076px;
-	height: 648px;
-	margin-top: 1rem;
-`;
-
-export const Sidebar = styled.div`
-  width: 130px;
-  height: 648px;
-  overflow: auto;
-`;
-
-export const Thumbs = styled.div``;
-
-export const Content = styled.div`
-  width: 936px;
-  height: 648px;
-  margin-left: 10px;
-`;
-
-export const Header = styled.div`
-  display: flex;
-  height: 27px;
-  padding: 0 20px;
-  background: #330067;
-`;
-
-export const Anchor = styled.a`
-  font-size: 0;
-  &.contact {
-    width: 64px;
-    margin-left: 30px;
-    background: url(${img3}) no-repeat;
-  }
-  &.drawger {
-    width: 108px;
-    margin-left: 20px;
-    background: url(${img4}) no-repeat;
-  }
-`;
-
-export const Nav = styled.div`
   position: relative;
+  width: 800px;
+  height: 600px;
+  margin-top: 2rem;
+  background: url(${frameImage});
+  box-shadow: 0 0 20px rgb(0,0,0);
+  user-select: none;
 `;
 
-export const Title = styled.div`
-  ${Header} & {
-    flex: 1;
-    width: 251px;
-    background: url(${img1}) no-repeat;
-  }
-`;
-
-export const Copy = styled.div`
-  ${Header} & {
-    width: 163px;
-    background: url(${img2}) no-repeat;
-  }
-`;
-
-export const Image = styled.img`
-  ${Thumbs} & {
-		margin-bottom: 10px;
-    cursor: pointer;
-  }
-`;
-
-export const Popup = styled.span`
-  display: none;
-  ${Anchor}:hover & {
-    position: absolute;
-    z-index: 99;
-    right: 0;
-    display: block;
-    width: 180px;
-    height: auto;
-    padding: 5px;
-    margin: 30px 0 0 -125px;
-    background: #000;
-    background: #000000bf;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-box-shadow: -5px 5px 10px rgba(0,0,0,.5);
-    -webkit-box-shadow: -5px 5px 10px rgb(0 0 0 / 50%);
-    font-size: 11px;
-    font-weight: bold;
-    line-height: 1.5;
-    color: #fff;
-  }
-`;
+export const Image = styled.img``;
